@@ -64,7 +64,7 @@ def generate_branding_snippet(prompt: str,openai_key ):
                 temperature=0.6,
                 max_tokens=32
                 )
-
+    # dasdsds
     # extract output text
     branding_text = response['choices'][0]['text']
     branding_text = branding_text.strip()
