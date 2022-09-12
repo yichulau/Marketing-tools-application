@@ -8,7 +8,7 @@ import re
 from dotenv import load_dotenv
 
 load_dotenv()
-MAX_INPUT_LENGTH=32
+MAX_INPUT_LENGTH=64
 
 def main():
     print("Running a Main function")
@@ -64,7 +64,7 @@ def generate_branding_snippet(prompt: str,openai_key ):
                 model="davinci-instruct-beta-v3",
                 prompt=enriched_prompt,
                 temperature=0.6,
-                max_tokens=32
+                max_tokens=64
                 )
     # dasdsds
     # extract output text
