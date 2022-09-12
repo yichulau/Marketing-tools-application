@@ -5,7 +5,9 @@ import openai
 import pandas
 import argparse
 import re
+from dotenv import load_dotenv
 
+load_dotenv()
 MAX_INPUT_LENGTH=32
 
 def main():
@@ -15,7 +17,7 @@ def main():
     args = parser.parse_args()
     user_input = args.input
 
-
+    OPENAI_API_KEY= os.environ.get("OPENAI_API_KEY")
 
     if validate_length(user_input):
         generate_branding_snippet(user_input, OPENAI_API_KEY)   
