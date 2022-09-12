@@ -15,7 +15,7 @@ def main():
     args = parser.parse_args()
     user_input = args.input
 
-    OPENAI_API_KEY = "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"
+
 
     if validate_length(user_input):
         generate_branding_snippet(user_input, OPENAI_API_KEY)   
